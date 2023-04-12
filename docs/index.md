@@ -26,3 +26,14 @@ features:
   - title: 完全静态依然保持动态的交互
     details: 真正的SSG + SPA构建。静态加载页面加载，但页面依然可以用 100% 的交互性吸引用户。
 ---
+
+<script setup>
+import { useData } from 'vitepress'
+
+const { theme } = useData()
+console.log(theme)
+</script>
+
+<template>
+  <h1>{{ theme }}</h1>
+</template>
