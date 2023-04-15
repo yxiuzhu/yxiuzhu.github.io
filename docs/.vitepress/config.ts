@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'HamWeb',
-  description: 'Just playing around.',
+  description: 'Just playing web.',
   themeConfig: {
     siteTitle: 'Ham Web', // 重置首页标题
     logo: 'images/my-logo-title.svg',
@@ -13,31 +13,38 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '框架',
+        text: '技术',
         items: [
-          { text: 'vue', link: '/vue/' },
-          { text: 'react', link: '/react/' }
-        ]
-      },
-      { text: 'Changelog', link: 'https://github.com/...' }
-    ],
-    // 侧边栏
-    sidebar: [
-      {
-        text: 'Section Title A',
-        items: [
-          { text: 'Item A', link: '/item-a' },
-          { text: 'Item B', link: '/item-b' }
+          { text: 'Vue', link: '/markdown/technology-space/vue/vue' },
+          { text: 'React', link: 'markdown/technology-space/react/react' },
+          { text: 'Node', link: 'markdown/technology-space/node/node' },
+          {
+            text: '微前端',
+            link: 'markdown/technology-space/micro-frontend/micro-frontend'
+          }
         ]
       },
       {
-        text: 'Section Title B',
+        text: '关于我',
         items: [
-          { text: 'Item C', link: '/item-c' },
-          { text: 'Item D', link: '/item-d' }
+          {
+            text: '个人介绍',
+            link: '/markdown/personal-intro/introduce/introduce'
+          },
+          {
+            text: 'TodoList',
+            link: '/markdown/personal-intro/todolist/todolist'
+          },
+          { text: 'note', link: '/markdown/personal-intro/note/note' }
         ]
       }
-    ]
+    ],
+    // 侧边栏
+    sidebar: {
+      '/markdown/technology-space/': sidebarTechnologySpace(),
+      '/markdown/personal-intro/': sidebarPersonalIntro()
+    },
+    socialLinks: [{ icon: 'github', link: 'https://github.com/yxiuzhu' }]
     // 开启搜索功能
     // localSearch: {
     //   locales: {
@@ -61,3 +68,58 @@ export default defineConfig({
     // },
   }
 })
+
+// 技术侧边导航
+function sidebarTechnologySpace() {
+  return [
+    {
+      text: 'Vue',
+      items: [{ text: 'Vue介绍', link: '/markdown/technology-space/vue/vue' }]
+    },
+    {
+      text: 'React',
+      items: [
+        { text: 'React介绍', link: '/markdown/technology-space/react/react' }
+      ]
+    },
+    {
+      text: 'Node',
+      items: [
+        { text: 'Node介绍', link: '/markdown/technology-space/node/node' }
+      ]
+    },
+    {
+      text: '微前端',
+      items: [
+        {
+          text: '微前端介绍',
+          link: '/markdown/technology-space/micro-frontend/micro-frontend'
+        }
+      ]
+    }
+  ]
+}
+// 关于我侧边导航
+function sidebarPersonalIntro() {
+  return [
+    {
+      text: '个人介绍',
+      items: [
+        {
+          text: '个人介绍',
+          link: '/markdown/personal-intro/introduce/introduce'
+        }
+      ]
+    },
+    {
+      text: 'Todolist',
+      items: [
+        { text: 'Todolist', link: '/markdown/personal-intro/todolist/todolist' }
+      ]
+    },
+    {
+      text: 'note',
+      items: [{ text: 'note', link: '/markdown/personal-intro/note/note' }]
+    }
+  ]
+}

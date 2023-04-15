@@ -6,15 +6,15 @@ titleTemplate: 个人网站
 
 hero:
   name: Ham Web
-  text: 这玩意儿真好玩儿
-  tagline: 前端信息纪要
+  text: 这世界那么大，真的好好玩儿~
+  tagline: 工作也好好玩儿
   image:
     src: /pure-logo.png
     alt: logo
   actions:
     - theme: brand
       text: 看看我的世界
-      link: /guide/getting-started
+      link: /markdown/technology-space/vue/vue
     - theme: alt
       text: GitHub
       link: https://github.com/yxiuzhu/ham-blog
