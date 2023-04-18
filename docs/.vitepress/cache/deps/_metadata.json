@@ -1,13 +1,23 @@
 {
-  "hash": "634e1ea0",
-  "browserHash": "8b190fa4",
+  "hash": "16515f10",
+  "browserHash": "3863a342",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "f4d369d9",
+      "fileHash": "b183f861",
+      "needsInterop": false
+    },
+    "@tomiaa/live2d": {
+      "src": "../../../../node_modules/@tomiaa/live2d/es/index.js",
+      "file": "@tomiaa_live2d.js",
+      "fileHash": "9e78ac56",
       "needsInterop": false
     }
   },
-  "chunks": {}
+  "chunks": {
+    "chunk-R647EDCJ": {
+      "file": "chunk-R647EDCJ.js"
+    }
+  }
 }

@@ -6,8 +6,8 @@ titleTemplate: 个人网站
 
 hero:
   name: Ham Web
-  text: 这世界那么大，真的好好玩儿~
-  tagline: 工作也好好玩儿
+  text: 世界那么大，真的好好玩儿~
+  tagline: 这里好好玩儿
   image:
     src: /pure-logo.png
     alt: logo
@@ -21,23 +21,12 @@ hero:
 
 features:
   - icon: ⚡️
-    title: 记录知识
-    details: 把学习整理的知识记录下来，对知识进一步理解，系统性学习
-  - icon: 🖖
     title: 技术文章
-    details: 将研究技术、阅读源码的过程记录下来，不管作为分享，还是自己以后回顾，都是一种很不错的方式
+    details: 通过文字将技术能力进行整合输出，通过输出加深对于知识进一步的理解，促进系统性的学习
+  - icon: 🖖
+    title: 生活纪要
+    details: 将工作规划、成果心得进行记录，便于复盘总结，利用自由的空间放飞不羁的心
   - icon: 🛠️
-    title: 个人网站
-    details: 博客可以用来展示自己的学习成果，也能作为自己的名片
+    title: 网站定位
+    details: 这是一个杂烩工具箱，既是展示作者的渠道，也是提升自我的大平台
 ---
-
-<script setup>
-import { useData } from 'vitepress'
-
-const { theme } = useData()
-console.log(theme)
-</script>
-
-<template>
-  <h1>{{ theme }}</h1>
-</template>

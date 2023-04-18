@@ -8,7 +8,16 @@ export default defineConfig({
     // head: [
     //   ['link', { rel: 'icon', href: '/images/favicon.ico' }]
     // ],
-    head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+    head: [
+      // live2d widget
+      [
+        'script',
+        {
+          src: 'https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js'
+        }
+      ],
+      ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ],
     // 顶部导航栏
     nav: [
       { text: '首页', link: '/' },
@@ -44,28 +53,16 @@ export default defineConfig({
       '/markdown/technology-space/': sidebarTechnologySpace(),
       '/markdown/personal-intro/': sidebarPersonalIntro()
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/yxiuzhu' }]
-    // 开启搜索功能
-    // localSearch: {
-    //   locales: {
-    //     zh: {
-    //       translations: {
-    //         button: {
-    //           buttonText: "搜索文档",
-    //           buttonAriaLabel: "搜索文档",
-    //         },
-    //         modal: {
-    //           noResultsText: "无法找到相关结果",
-    //           resetButtonTitle: "清除查询条件",
-    //           footer: {
-    //             selectText: "选择",
-    //             navigateText: "切换",
-    //           },
-    //         },
-    //       },
-    //     },
-    //   },
-    // },
+    socialLinks: [{ icon: 'github', link: 'https://github.com/yxiuzhu' }],
+    // Algolia全文搜索功能 https://docsearch.algolia.com/apply/
+    // search: {
+    //   provider: 'algolia',
+    //   options: {
+    //     appId: '...',
+    //     apiKey: '...',
+    //     indexName: '...'
+    //   }
+    // }
   }
 })
 
