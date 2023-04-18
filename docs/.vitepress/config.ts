@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'HamWeb',
   description: 'Just playing web.',
+  base: '/ham-blog/',
   themeConfig: {
     siteTitle: 'Ham Web', // 重置首页标题
     logo: 'images/my-logo-title.svg',
