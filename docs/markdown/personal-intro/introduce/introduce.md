@@ -1,3 +1,8 @@
+---
+layout: home
+
+---
+
 <script lang="ts" setup>
   import Introduce from './Introduce.vue'
 </script>

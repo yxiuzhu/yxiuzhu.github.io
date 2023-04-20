@@ -10,6 +10,9 @@ export default defineConfig({
     //   ['link', { rel: 'icon', href: '/images/favicon.ico' }]
     // ],
     head: [
+      // 新增全文搜索 algolia
+      ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@3' }],
+      ['link', { rel: 'icon', href: '/favicon.ico' }],
       // live2d widget
       [
         'script',
@@ -17,7 +20,6 @@ export default defineConfig({
           src: 'https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js'
         }
       ],
-      ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
     // 顶部导航栏
     nav: [
@@ -56,14 +58,14 @@ export default defineConfig({
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/yxiuzhu' }],
     // Algolia全文搜索功能 https://docsearch.algolia.com/apply/
-    // search: {
-    //   provider: 'algolia',
-    //   options: {
-    //     appId: '...',
-    //     apiKey: '...',
-    //     indexName: '...'
-    //   }
-    // }
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: '8D0SZ5S3TS',
+        apiKey: 'f2059ef50cd65cbf0d054b4b52421c29',
+        indexName: 'yxiuzhuio'
+      }
+    }
   }
 })
 
