@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'HamWeb',
   description: 'Just playing web.',
-  base: '/ham-blog/',
+  base: '/',
   themeConfig: {
     siteTitle: 'Ham Web', // 重置首页标题
     logo: 'images/my-logo-title.svg',
@@ -10,16 +10,14 @@ export default defineConfig({
     //   ['link', { rel: 'icon', href: '/images/favicon.ico' }]
     // ],
     head: [
-      // 新增全文搜索 algolia
-      ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@3' }],
       ['link', { rel: 'icon', href: '/favicon.ico' }],
       // live2d widget
-      [
-        'script',
-        {
-          src: 'https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js'
-        }
-      ],
+      // [
+      //   'script',
+      //   {
+      //     src: 'https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js'
+      //   }
+      // ],
     ],
     // 顶部导航栏
     nav: [
@@ -66,7 +64,8 @@ export default defineConfig({
         indexName: 'yxiuzhuio'
       }
     }
-  }
+  },
+  lastUpdated: true // 记录文章上次更新时间
 })
 
 // 技术侧边导航

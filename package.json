@@ -11,6 +11,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "docsearch.js": "^2.6.3",
     "flexsearch": "^0.7.31",
     "markdown-it": "^13.0.1",
     "vitepress": "^1.0.0-alpha.65",
