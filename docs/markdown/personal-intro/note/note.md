@@ -1,5 +1,10 @@
 我是 note 专区
 
-## 论如何找回那只wanko
 
-## 
+## pnpm的接入
+
+- node_modules包的结构
+
+## pnpm踩坑记录
+
+- 
