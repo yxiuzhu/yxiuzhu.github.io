@@ -13,3 +13,6 @@
 // export default defineConfig({
 //   plugins: [SearchPlugin(options)]
 // })
+export default {
+  base: '/docs/' // 将网站部署到 /docs/ 子目录
+}
