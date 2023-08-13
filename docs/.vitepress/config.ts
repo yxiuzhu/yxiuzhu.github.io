@@ -10,7 +10,7 @@ export default defineConfig({
     //   ['link', { rel: 'icon', href: '/images/favicon.ico' }]
     // ],
     head: [
-      ['link', { rel: 'icon', href: '/favicon.ico' }],
+      ['link', { rel: 'icon', href: '/favicon.ico' }]
       // live2d widget
       // [
       //   'script',
@@ -117,8 +117,14 @@ function sidebarPersonalIntro() {
       ]
     },
     {
-      text: 'note',
-      items: [{ text: 'note', link: '/markdown/personal-intro/note/note' }]
+      text: '笔记',
+      items: [
+        { text: '待发布笔记', link: '/markdown/personal-intro/note/note' },
+        {
+          text: '《亲密关系》读书笔记',
+          link: '/markdown/personal-intro/note/Intimate-relationship'
+        }
+      ]
     }
   ]
 }

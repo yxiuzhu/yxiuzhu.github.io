@@ -7,8 +7,6 @@ const { Layout } = DefaultTheme
 
 <template>
   <Layout>
-    <template #layout-bottom>
-      Layout 组件插槽 ：layout-bottom22
-    </template>
+    <template #layout-bottom> </template>
   </Layout>
 </template>
