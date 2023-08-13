@@ -45,7 +45,7 @@ export default defineConfig({
             text: 'TodoList',
             link: '/markdown/personal-intro/todolist/todolist'
           },
-          { text: 'note', link: '/markdown/personal-intro/note/note' }
+          { text: '笔记', link: '/markdown/personal-intro/note/note' }
         ]
       }
     ],
