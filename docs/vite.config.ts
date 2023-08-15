@@ -14,5 +14,7 @@
 //   plugins: [SearchPlugin(options)]
 // })
 export default {
-  base: '/docs/' // 将网站部署到 /docs/ 子目录
+  build: {
+    outDir: 'docs' // 将 "docs" 修改为你想要的输出目录名
+  } // 将网站部署到 /docs/ 子目录
 }

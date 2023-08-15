@@ -10,7 +10,7 @@
 #### Store
 pnpm 使用名为 .pnpm-store的 store dir，Mac/linux中默认会设置到{home dir}>/.pnpm-store/v3；windows下会设置到当前盘的根目录下，比如C（C/.pnpm-store/v3）、D盘（D/.pnpm-store/v3）。
 
-![avatar](/images/note/1682526563293.jpg)
+
 可以在不同的磁盘上设置同一个存储，但在这种情况下，pnpm 将复制包而不是硬链接它们，因为硬链接只能发生在同一文件系统同一分区上
 
 
