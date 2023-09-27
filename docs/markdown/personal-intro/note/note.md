@@ -1,3 +1,7 @@
+---
+layout: doc
+---
+
 我是 note 专区
 
 ## pnpm的接入

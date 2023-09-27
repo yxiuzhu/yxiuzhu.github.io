@@ -6,7 +6,7 @@ export default defineConfig({
   outDir: './dist',
   themeConfig: {
     siteTitle: 'Ham Web', // 重置首页标题
-    logo: 'images/my-logo-title.svg',
+    logo: '/my-logo-title.svg',
     // head: [
     //   ['link', { rel: 'icon', href: '/images/favicon.ico' }]
     // ],
