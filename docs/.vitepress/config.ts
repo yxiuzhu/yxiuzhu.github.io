@@ -3,7 +3,7 @@ export default defineConfig({
   title: 'HamWeb',
   description: 'Just playing web.',
   base: '/',
-  outDir: './dist',
+  outDir: 'docs/dist',
   themeConfig: {
     siteTitle: 'Ham Web', // 重置首页标题
     logo: '/my-logo-title.svg',
